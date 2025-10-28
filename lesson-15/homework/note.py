@@ -28,7 +28,7 @@ with sqlite3.connect("Homework15.db") as conn:
 conn.commit()    
 print('Data inserted')
 
-# Update the Name of Jadzia Dax to be Ezri Dax
+# 3 Update the Name of Jadzia Dax to be Ezri Dax
 with sqlite3.connect("Homework15.db") as conn:
     cursor = conn.cursor()
     cursor.execute("""
@@ -39,7 +39,7 @@ with sqlite3.connect("Homework15.db") as conn:
 conn.commit()
 print('Name Updated')    
 
-# Display the Name and Age of everyone in the table classified as Bajoran.   
+# 4 Display the Name and Age of everyone in the table classified as Bajoran.   
 with sqlite3.connect("Homework15.db") as conn:
     cursor = conn.cursor()
     cursor.execute('''
